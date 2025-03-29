@@ -1,0 +1,39 @@
+@import "./reset.css";
+
+@font-face {
+    font-family: "Norse";
+    src: url("./logo-font/Norse-Bold.woff2") format("woff2"),
+        url("./logo-font/Norse-Bold.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+    --ff-logo: "Norse", sans-serif;
+    --ff-robot: "Roboto", sans-serif;
+    --fs-logo: 2.3rem;
+    --pad-main: 1rem;
+    --clr-primary: rgba(0, 0, 0, 0.651);
+}
+
+body {
+    font-family: var(--ff-robot);
+}
+
+.main-wrapper {
+    display: flex;
+    padding: 0 var(--pad-main);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+.logo__image {
+    fill: var(--clr-primary);
+}
+.logo__text {
+    font-family: var(--ff-logo);
+    font-size: var(--fs-logo);
+}

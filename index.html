@@ -14,46 +14,123 @@
         <script src="./script.js" defer></script>
     </head>
     <body>
-        <nav class="main-wrapper">
-            <div class="logo">
+        <nav class="nav">
+            <div class="nav__inner">
+                <div class="logo">
+                    <svg
+                        class="logo__image"
+                        width="50px"
+                        height="50px"
+                        viewBox="0 0 512 512"
+                        version="1.1"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        fill="#000000"
+                    >
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g
+                            id="SVGRepo_tracerCarrier"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        ></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <title>library</title>
+                            <g
+                                id="Page-1"
+                                stroke="none"
+                                stroke-width="1"
+                                fill="none"
+                                fill-rule="evenodd"
+                            >
+                                <g
+                                    id="Combined-Shape"
+                                    fill="#000000"
+                                    transform="translate(42.666667, 85.333333)"
+                                >
+                                    <path
+                                        d="M3.55271368e-14,298.666667 L426.666667,298.666667 L426.666667,341.333333 L3.55271368e-14,341.333333 L3.55271368e-14,298.666667 Z M42.6666667,1.42108547e-14 L106.666667,1.42108547e-14 L106.666667,277.333333 L42.6666667,277.333333 L42.6666667,1.42108547e-14 Z M128,21.3333333 L192,21.3333333 L192,277.333333 L128,277.333333 L128,21.3333333 Z M288.933802,36.9522088 L351.961498,25.8387255 L399.909944,277.333333 L330.641827,277.70319 L288.933802,36.9522088 Z M213.333333,21.3333333 L277.333333,21.3333333 L277.333333,277.333333 L213.333333,277.333333 L213.333333,21.3333333 Z"
+                                    ></path>
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                    <p class="logo__text">odin library</p>
+                </div>
                 <svg
-                    width="80px"
-                    height="80px"
-                    viewBox="0 0 512.00 512.00"
-                    version="1.1"
-                    xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
                     fill="#000000"
+                    width="25px"
+                    height="25px"
+                    viewBox="0 0 35 35"
+                    data-name="Layer 2"
+                    id="Layer_2"
+                    xmlns="http://www.w3.org/2000/svg"
+                    transform="rotate(270)"
                 >
                     <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                     <g
                         id="SVGRepo_tracerCarrier"
                         stroke-linecap="round"
                         stroke-linejoin="round"
+                        stroke="#CCCCCC"
+                        stroke-width="0.28"
                     ></g>
                     <g id="SVGRepo_iconCarrier">
-                        <title>library</title>
-                        <g
-                            id="Page-1"
-                            stroke="none"
-                            stroke-width="1"
-                            fill="none"
-                            fill-rule="evenodd"
-                        >
-                            <g
-                                id="Combined-Shape"
-                                fill="#000000"
-                                transform="translate(42.666667, 85.333333)"
-                            >
-                                <path
-                                    d="M3.55271368e-14,298.666667 L426.666667,298.666667 L426.666667,341.333333 L3.55271368e-14,341.333333 L3.55271368e-14,298.666667 Z M42.6666667,1.42108547e-14 L106.666667,1.42108547e-14 L106.666667,277.333333 L42.6666667,277.333333 L42.6666667,1.42108547e-14 Z M128,21.3333333 L192,21.3333333 L192,277.333333 L128,277.333333 L128,21.3333333 Z M288.933802,36.9522088 L351.961498,25.8387255 L399.909944,277.333333 L330.641827,277.70319 L288.933802,36.9522088 Z M213.333333,21.3333333 L277.333333,21.3333333 L277.333333,277.333333 L213.333333,277.333333 L213.333333,21.3333333 Z"
-                                ></path>
-                            </g>
-                        </g>
+                        <path
+                            d="M18.44,34.68a18.22,18.22,0,0,1-2.94-.24,18.18,18.18,0,0,1-15-20.86A18.06,18.06,0,0,1,9.59.63,2.42,2.42,0,0,1,12.2.79a2.39,2.39,0,0,1,1,2.41L11.9,3.1l1.23.22A15.66,15.66,0,0,0,23.34,21h0a15.82,15.82,0,0,0,8.47.53A2.44,2.44,0,0,1,34.47,25,18.18,18.18,0,0,1,18.44,34.68ZM10.67,2.89a15.67,15.67,0,0,0-5,22.77A15.66,15.66,0,0,0,32.18,24a18.49,18.49,0,0,1-9.65-.64A18.18,18.18,0,0,1,10.67,2.89Z"
+                        ></path>
                     </g>
                 </svg>
-                <p class="logo__text">odin library</p>
             </div>
         </nav>
+        <main class="main">
+            <div class="grid">
+                <div class="place-holder">
+                    <p>Add new book</p>
+                </div>
+            </div>
+        </main>
+        <dialog>
+            <p>book information</p>
+            <div class="info-container">
+                <p>title</p>
+                <input type="text" />
+            </div>
+            <div class="info-container">
+                <p>author</p>
+                <input type="text" />
+            </div>
+            <div class="info-container">
+                <p>pages</p>
+                <input type="number" />
+            </div>
+            <div class="info-container">
+                <p>read state</p>
+                <div class="read-oprions">
+                    <div>
+                        <input
+                            type="radio"
+                            id="not-read"
+                            name="read-state"
+                            value="false"
+                            checked
+                        />
+                        <label for="not-read">not read</label>
+                    </div>
+                    <div>
+                        <input
+                            type="radio"
+                            id="read"
+                            name="read-state"
+                            value="true"
+                        />
+                        <label for="read">read</label>
+                    </div>
+                </div>
+            </div>
+            <div class="dialog__bottuns">
+                <div class="dialog__button">add book</div>
+                <div class="cancel-dialog">cancel</div>
+            </div>
+        </dialog>
     </body>
 </html>
